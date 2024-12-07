@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Analyser
- * Plugin URI:        https://github.com/WordPress-Phoenix/analyser
+ * Plugin URI:        https://github.com/psyco7042/analyser
  * Description:       Analyse your website's performance
  * Version:           0.1.0
  * Author:            Priyam Sengupta
@@ -11,3 +11,6 @@
  * Text Domain:       analyser
  * Domain Path:       /languages
  */
+
+
+ 
