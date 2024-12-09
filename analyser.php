@@ -33,8 +33,7 @@ function anal_admin_enqueue_scripts(){
     wp_enqueue_script('anal-script', plugins_url('assets/js/analyser-admin.js', __FILE__), array('jquery'), $plugin_data['Version'], true);
     wp_enqueue_script('anal-chart-script', plugins_url('assets/js/analyser-chart.js', __FILE__), array('jquery'), $plugin_data['Version'], true);
     wp_enqueue_script('anal-chartjs', 'https://cdn.jsdelivr.net/npm/chart.js', array('jquery'), $plugin_data['Version'], true);
-    $chart_data = Analyser_product_class::anal_get_best_seller_products(5, 30);
-    wp_localize_script('anal-chart-script', 'chart_data', $chart_data);
+
 }
 add_action('admin_enqueue_scripts', 'anal_admin_enqueue_scripts');
 
