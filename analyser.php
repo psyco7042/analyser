@@ -29,7 +29,7 @@ function anal_admin_enqueue_scripts(){
     $plugin_data = get_plugin_data( __FILE__ );
     wp_enqueue_script('anal-script', plugins_url('assets/js/analyser-admin.js', __FILE__), array('jquery'), $plugin_data['Version'], true);
 }
-add_acrion('admin_enqueue_scripts', 'anal_admin_enqueue_scripts');
+add_action('admin_enqueue_scripts', 'anal_admin_enqueue_scripts');
 
 
 
