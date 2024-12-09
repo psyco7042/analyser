@@ -18,9 +18,12 @@ if(!defined('ABSPATH')) {
 }
 
 
-include plugin_dir_path( __FILE__ ) . 'includes/analyser-admin-menu.php';
-
-function analyser_admin_styles(){
-
+function anal_admin_enqueue_scripts(){
+    $plugin_data = get_plugin_data( __FILE__ );
+    wp_enqueue_style('anal-style', plugins_url('assets/css/analyser-admin.css', __FILE__), array(), $plugin_data['Version'], 'all' );
 }
-add_action('admin_enqueue_scripts', 'analyser_admin_styles');
+
+add_action('admin_enqueue_scripts', 'anal_admin_enqueue_scripts');
+
+
+include_once plugin_dir_path( __FILE__ ) . 'includes/analyser-admin-menu.php';
