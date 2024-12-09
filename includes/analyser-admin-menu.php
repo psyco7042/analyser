@@ -19,8 +19,14 @@ add_action( 'admin_menu', 'analyser_admin_menu' );
 function analyser_settings_page() {
     ?>
     <div class="wrap">
-        <h1>Analyser Settings</h1>
-        
+        <div class="container-fluid">
+            <div class="card product-analyser">
+                <div class="first-half">
+                    <h4 class="card-title">Most Sold Products on your Website Are: </h4>
+                    <canvas id="salesPieChart" width="400" height="400"></canvas>
+                </div>                
+            </div>
+        </div>
     </div>
     <?php
 }
